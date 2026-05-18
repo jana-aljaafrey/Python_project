@@ -86,7 +86,7 @@ def reaports():
     salesMin = df["Cost"].min()
     maxDate =  df[df["Cost"] == salesMax]["Date"]
     minDate =  df[df["Cost"] == salesMin]["Date"]
-    Discriptive_Statisticas = f"\nAverage Sales: {salesMean} Tickets\nMaximum Sales: {salesMax} Tickets  (on {maxDate.to_string(index=False)})\nMinimum Sales: {salesMin} Tickets  (on {minDate.to_string(index=False)})\n"
+    Discriptive_Statisticas = f"\nAverage Sales: {round(salesMean, 2)} Tickets\nMaximum Sales: {salesMax} Tickets  (on {maxDate.to_string(index=False)})\nMinimum Sales: {salesMin} Tickets  (on {minDate.to_string(index=False)})\n"
 
 
     print("\n",eventSalesTable)
@@ -181,6 +181,7 @@ while ongoing:
                 # to deal with unexpected user input
                 else:
                     print("** Please Enter a Number, Ehither 1 or 2! **")
+                    break
 
     # exite option to close the loop
     elif answer == "2":
@@ -188,3 +189,4 @@ while ongoing:
     # to deal with unexpected user input
     else:
         print("** Please Enter a Number, Ehither 1 or 2! **")
+        continue
