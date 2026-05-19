@@ -100,7 +100,7 @@ longin =  True
 services = True
 
 while ongoing:
-    print("\n*** Wecome to --- ***\n")
+    print("\n*** Wecome to Ticket Sales Management System ***\n")
     print("LongIn to Start")
     print("1. LongIn\n2. Exite:\n")
     answer = input("\n Please Choose a Number: ")
